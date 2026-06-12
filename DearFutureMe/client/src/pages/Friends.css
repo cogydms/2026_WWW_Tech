@@ -1,0 +1,30 @@
+.friends-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.friends-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #c47c3e;
+}
+
+.friend-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff8f0;
+  border: 1px solid #e8d5b0;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(196, 124, 62, 0.1);
+}
+
+.add-friend {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
