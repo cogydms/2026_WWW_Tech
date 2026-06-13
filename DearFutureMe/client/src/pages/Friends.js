@@ -9,7 +9,7 @@ function Friends() {
 
     useEffect(() => {
         const token = localStorage.getItem("token");
-        fetch("http://localhost:3000/api/friends", {
+        fetch("https://dearfutureme-9rng.onrender.com/api/friends", {
             headers: { Authorization: `Bearer ${token}` }
         })
         .then((res) => res.json())
@@ -23,7 +23,7 @@ function Friends() {
             return;
         }
         const token = localStorage.getItem("token");
-        const response = await fetch(`http://localhost:3000/api/friends`, {
+        const response = await fetch(`https://dearfutureme-9rng.onrender.com/api/friends`, {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json",

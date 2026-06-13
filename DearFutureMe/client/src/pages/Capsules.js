@@ -12,7 +12,7 @@ function Capsules() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     
-    fetch(`http://localhost:3000/api/capsules?sort=${sort}&search=${search}&filter=${filter}`, {
+    fetch(`https://dearfutureme-9rng.onrender.com/api/capsules?sort=${sort}&search=${search}&filter=${filter}`, {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => res.json())
@@ -21,7 +21,7 @@ function Capsules() {
   }, [sort, search, filter]);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:3000/api/capsules/${id}`, {
+    await fetch(`https://dearfutureme-9rng.onrender.com/api/capsules/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
     });

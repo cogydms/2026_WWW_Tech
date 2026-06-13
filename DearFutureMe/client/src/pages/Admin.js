@@ -16,8 +16,8 @@ function Admin() {
             return;
         }
         const url = tab === "users" 
-            ? "http://localhost:3000/api/admin" 
-            : "http://localhost:3000/api/admin/capsules";
+            ? "https://dearfutureme-9rng.onrender.com/api/admin" 
+            : "https://dearfutureme-9rng.onrender.com/api/admin/capsules";
         
         fetch(url, {
             headers: { Authorization: `Bearer ${token}` }
@@ -32,8 +32,8 @@ function Admin() {
 
     const handleDelete = async (id) => {
         const url = tab === "users"
-            ? `http://localhost:3000/api/admin/${id}`
-            : `http://localhost:3000/api/admin/capsules/${id}`;
+            ? `https://dearfutureme-9rng.onrender.com/api/admin/${id}`
+            : `https://dearfutureme-9rng.onrender.com/api/admin/capsules/${id}`;
         
         await fetch(url, {
             method: "DELETE",

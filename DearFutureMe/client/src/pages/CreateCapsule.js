@@ -10,7 +10,7 @@ function CreateCapsule(){
     const navigate = useNavigate();
 
     const handleCreate = async () => {
-    const response = await fetch("http://localhost:3000/api/capsules", {
+    const response = await fetch("https://dearfutureme-9rng.onrender.com/api/capsules", {
         method: "POST",
         headers: { 
             "Content-Type": "application/json",

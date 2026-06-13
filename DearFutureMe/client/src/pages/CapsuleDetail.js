@@ -15,7 +15,7 @@ function CapsuleDetail() {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch(`http://localhost:3000/api/capsules/${id}`, {
+    fetch(`https://dearfutureme-9rng.onrender.com/api/capsules/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -33,7 +33,7 @@ function CapsuleDetail() {
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        `http://localhost:3000/api/capsules/${id}`,
+        `https://dearfutureme-9rng.onrender.com/api/capsules/${id}`,
         {
           method: "PUT",
           headers: {

@@ -13,7 +13,7 @@ function FriendCapsules() {
     useEffect(() => {
     const token = localStorage.getItem("token");
     
-    fetch(`http://localhost:3000/api/friends/${id}/capsules`, {
+    fetch(`https://dearfutureme-9rng.onrender.com/api/friends/${id}/capsules`, {
       headers: { Authorization: `Bearer ${token}` }
     })
       .then((res) => res.json())
