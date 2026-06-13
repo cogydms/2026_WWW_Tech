@@ -9,10 +9,9 @@ import Navbar from "./components/Navbar";
 import CapsuleDetail from "./pages/CapsuleDetail";
 import FriendCapsules from "./pages/FriendCapsules";
 import Admin from "./pages/Admin";
-import { useState } from "react";
 
 function App() {
-  const [token, setToken] = useState(localStorage.getItem("token"));
+  const token = localStorage.getItem("token");
   return (
     <BrowserRouter>
       {token && <Navbar />}

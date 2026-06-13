@@ -28,7 +28,7 @@ function Admin() {
             else setCapsules(data);
         })
         .catch((err) => console.error(err));
-    }, [tab]);
+    }, [tab, navigate]);
 
     const handleDelete = async (id) => {
         const url = tab === "users"

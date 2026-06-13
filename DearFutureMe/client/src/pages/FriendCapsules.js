@@ -19,7 +19,7 @@ function FriendCapsules() {
       .then((res) => res.json())
       .then((data) => setCapsules(data))
       .catch((err) => console.error(err));
-  }, []);
+  }, [id]);
 
     return (
         <div className="capsules-container">
